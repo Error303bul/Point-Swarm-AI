@@ -8,7 +8,17 @@ public class Main extends JFrame implements Runnable{
 	
 	public final int maxObjects=1000, infoPerObject=6, fps=100;
 	public int[][] objects;
+	/*
+	slip: 0-100 (100 no slip, 0 full slip)
+	distance: minimum distance between objects (any)
+	objectsSpeed: the speed of moving objects
+	visionDistance: if the distance to the nearest object is greater than this, the object will move randomly
+	objectRadius: just a radius of objects
+	gameSpeed: indicates how many times the code is played
+	summonObjects: how much objects will spawn
+	*/
 	public static int slip=50, distance=50, objectSpeed=5,visionDistance=75, objectsRadius=10, gameSpeed=1000, summonObjects=100;
+	//Colors
 	public Color[] color= {
 			new Color(255, 0, 229),
 			new Color(252, 0, 0),
